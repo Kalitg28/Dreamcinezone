@@ -280,7 +280,7 @@ async def send_msg(bot, filename, caption):
 
         filename = re.sub(r"[\(\)\[\]\{\}:;'\-!]", "", filename)
 
-        text = "#𝑵𝒆𝒘_𝑭𝒊𝒍𝒆_𝑨𝒅𝒅𝒆𝒅 ✅\n\n👷𝑵𝒂𝒎𝒆: `{}`\n\n🌳𝑸𝒖𝒂𝒍𝒊𝒕𝒚: {}\n\n🍁𝑨𝒖𝒅𝒊𝒐: {}"
+        text = "#𝑵𝒆𝒘_𝑭𝒊𝒍𝒆_𝑨𝒅𝒅𝒆𝒅 ✅\n\n🎬𝑵𝒂𝒎𝒆: `{}`\n\n📀𝑸𝒖𝒂𝒍𝒊𝒕𝒚: Proper HD\n\n🔊𝑨𝒖𝒅𝒊𝒐: {}\n\n📤 𝑼𝒑𝒍𝒐𝒂𝒅 : @Indian_MV"
         text = text.format(filename, quality, language)
 
         if await add_name(OWNERID, filename):
@@ -293,7 +293,7 @@ async def send_msg(bot, filename, caption):
                     resized_poster = await fetch_image(poster_url)  
 
             filenames = filename.replace(" ", '-')
-            btn = [[InlineKeyboardButton('🌲 Get Files 🌲', url=f"https://telegram.me/{temp.U_NAME}?start=getfile-{filenames}")]]
+            btn = [[InlineKeyboardButton('📥 Download 📥', url=f"https://telegram.me/{temp.U_NAME}?start=getfile-{filenames}")]]
             
             if resized_poster:
                 await bot.send_photo(chat_id=DREAMCINEZONE_MOVIE_UPDATE_CHANNEL, photo=resized_poster, caption=text, reply_markup=InlineKeyboardMarkup(btn))
