@@ -28,7 +28,7 @@ BOT_TOKEN = environ.get('BOT_TOKEN', "")
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
 
-PICS = (environ.get('PICS', 'https://envs.sh/kvM.jpg')).split()  # Sample pic
+PICS = (environ.get('PICS', 'https://envs.sh/8El.jpg')).split()  # Sample pic
 NOR_IMG = environ.get("NOR_IMG", "https://graph.org/file/e20b5fdaf217252964202.jpg")
 MELCOW_VID = environ.get("MELCOW_VID", "https://graph.org/file/60e8a622b14796e4448ce.mp4")
 SPELL_IMG = environ.get("SPELL_IMG", "https://graph.org/file/13702ae26fb05df52667c.jpg")
@@ -62,7 +62,7 @@ OWNER_UPI_ID = environ.get('OWNER_UPI_ID', 'indianmv@axl')
 # MongoDB Configuration
 # ============================
 DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://amazonbotmv:amazonbotmv@cluster0.dudpekw.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
-DATABASE_URI2 = environ.get('DATABASE_URI2', "mongodb+srv://uploadbotmv:uploadbotmv@cluster0.bygtkjt.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+DATABASE_URI2 = environ.get('DATABASE_URI2', "mongodb+srv://kalitg01:kalitg01@cluster1.sd0p4.mongodb.net/?retryWrites=true&w=majority&appName=Cluster1")
 DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'dreamcinezone_files')
 
