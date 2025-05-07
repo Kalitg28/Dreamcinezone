@@ -52,7 +52,7 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-                    InlineKeyboardButton('🔰 ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ 🔰', url=f'http://telegram.me/{temp.U_NAME}?startgroup=true')
+                    InlineKeyboardButton('➕ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕', url=f'http://telegram.me/{temp.U_NAME}?startgroup=true')
                 ],[
                     InlineKeyboardButton('ᴛᴏᴘ sᴇᴀʀᴄʜɪɴɢ ⭐', callback_data="topsearch"),
                     InlineKeyboardButton(' ʜᴇʟᴘ 📢', callback_data='help'),
@@ -84,7 +84,7 @@ async def start(client, message):
 
     if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [[
-                    InlineKeyboardButton('🔰 ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ 🔰', url=f'http://telegram.me/{temp.U_NAME}?startgroup=true')
+                    InlineKeyboardButton('➕ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕', url=f'http://telegram.me/{temp.U_NAME}?startgroup=true')
                 ],[
                     InlineKeyboardButton('ᴛᴏᴘ sᴇᴀʀᴄʜɪɴɢ ⭐', callback_data="topsearch"),
                     InlineKeyboardButton(' ʜᴇʟᴘ 📢', callback_data='help'),
@@ -186,9 +186,9 @@ async def start(client, message):
                     "You have not joined all our *Updates Channels* yet.\n"
                     "Please click the *Join Updates Channels* buttons below and ensure that you join *all* the listed channels.\n"
                     "After that, please try again.\n\n"
-                    "आपने हमारे *सभी Updates Channels* को जॉइन नहीं किया है।\n"
-                    "कृपया *Join Updates Channels* बटन पर क्लिक करें और सुनिश्चित करें कि आपने *सभी चैनल्स* को जॉइन किया है।\n"
-                    "इसके बाद, कृपया फिर से प्रयास करें।"
+                    "நீங்கள் எங்கள் *All Updates Channels* சேரவில்லை.\n"
+                    "*Join Updates Channel* பொத்தானைக் கிளிக் செய்து, நீங்கள் *All Channels* சேர்ந்துள்ளீர்கள் என்பதை உறுதிப்படுத்திக் கொள்ளுங்கள்.\n"
+                    "இதற்குப் பிறகு, மீண்டும் முயற்சிக்கவும்."
                 )
                 await message.reply_photo(
                     photo=random.choice(FSUB_PICS),
